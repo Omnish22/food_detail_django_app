@@ -6,6 +6,7 @@ class RegisterForm(UserCreationForm):
     # add another field
     # email = forms.EmailField() # alredy defined field
 
+
     class Meta:
         model = User
-        fields = ['first_name','last_name','username', 'email', 'password', 'password2']
+        fields = ['username', 'email', 'password1', 'password2']
